@@ -1,0 +1,30 @@
+<script>
+    //Problema
+    // Receba os três lados de um triângulo. Informe se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. Dica: pesquise sobre a regra para saber se os lados formam um triângulo e também sobre os tipos de triângulos.
+
+    //Entrada
+    let cateto1 = prompt(`Informe o valor de um dos catetos`)
+    let cateto2 = prompt(`Informe o valor do outro cateto`)
+    let hip = prompt(`Informe o valor do outro cateto`)
+    mensagemFi1 = `É possível formar um triângulo com os lados ${cateto1}, ${cateto2} e ${hip}`
+    if (cateto1 + cateto2 > hip) {
+        if (cateto1 === cateto2 && cateto2 === hip) {
+            alert(mensagemFi1 + ` e o triângulo é um equilátero`)
+        }
+        if (cateto1 === cateto2 && cateto2 != hip) {
+            alert(mensagemFi1 + ` e o triângulo é um isóceles`)
+        }
+        if (cateto1!=cateto2&&cateto1!=hip&&cateto2!=hip)
+        alert(mensagemFi1 + ` e o triângulo é um escaleno`)
+    }
+    else if (cateto1 + cateto2 < hip) {
+        alert(`Não é possível formar um triângulo com os lados ${cateto1}, ${cateto2} e ${hip}`)
+    }
+    else {
+        alert(`Inválido, tente novamente com 3 valores`)
+    }
+    //Processamento
+
+
+    //Saída
+</script>

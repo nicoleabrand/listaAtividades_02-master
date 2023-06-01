@@ -1,0 +1,25 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que pede dois inteiros e armazene eles em duas variáveis.
+    Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
+    */
+
+    //ENTRADA
+    let num1 = Number(prompt(`Informe um número inteiro`))
+    let num2 = Number(prompt(`Informe outro número inteiro`))
+    if (num1 == num2) {
+        alert(`Informe dois números diferentes`)
+    }
+    else {
+        //PROCESSAMENTO
+        const num3 = num1
+        num1 = num2
+        num2 = num3
+        //SAÍDA
+        alert(`Antes: ${num2}, ${num1}`)
+        alert(`Depois: ${num1}, ${num2}`)
+    }
+
+
+</script>

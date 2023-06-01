@@ -1,0 +1,40 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+    - "Telefonou para a vítima?"
+    - "Esteve no local do crime?"
+    - "Mora perto da vítima?"
+    - "Devia para a vítima?"
+    - "Já trabalhou com a vítima?"
+    O script deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
+    */
+
+    //ENTRADA
+    let tel = prompt(`Telefonou para a vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
+    let est = prompt(`Esteve no local do crime? Responda com S(sim) ou N(não)`).toUpperCase().trim()
+    let mora = prompt(`Mora perto da vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
+    let din = prompt(`Devia dinheiro para a vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
+    let tra = prompt(`Já trabalhou com a vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
+    tel= 1
+    est = 1
+    mora = 1
+    din=1
+    tra=1
+    if (tel+est+mora+din+tra==5){
+        alert (`Assassino`)
+    }
+    else if (tel+est+mora+din+tra==4 || tel+est+mora+din+tra==3){
+        alert (`Cúmplice`)
+    }
+    else if (tel+est+mora+din+tra==1 || tel+est+mora+din+tra==2){
+        alert (`Suspeito`)
+    }
+    else if () {
+        alert (`Inocente`)
+    }
+    //PROCESSAMENTO
+
+    //SAÍDA
+
+</script>
