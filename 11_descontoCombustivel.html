@@ -14,8 +14,28 @@
     */
 
     //ENTRADA
-
-
+    const tipo= prompt(`Qual o tipo do combustível? Responda com A para álcool e G para gasolina comum`).toLowerCase()
+    const litros= Number(prompt(`Qual a quantidade em litros vendida para o cliente?`))
+    mensagemfi = `O valor final a ser pago pelo cliente será de R$`
+    if (litros<=20 && tipo=="a") {
+        resultado=litros*6.10-litros*6.10*0.03
+        alert(mensagemfi+resultado.toFixed(2).replace(".",","))
+    }
+    else if (litros>20 && tipo=="a") {
+        resultado=litros*6.10-litros*6.10*0.05
+        alert(mensagemfi+resultado.toFixed(2).replace(".",","))
+    }
+    else if (litros<=20 && tipo=="g") {
+        resultado=litros*6.50-litros*6.50*0.04
+        alert(mensagemfi+resultado.toFixed(2).replace(".",","))
+    }
+    else if (litros>=20 && tipo=="g") {
+        resultado=litros*6.50-litros*6.50*0.06
+        alert(mensagemfi+resultado.toFixed(2).replace(".",","))
+    }
+    else {
+        alert(`Inválido, informe com A para álcool ou G para gasolina`)
+    }
     //PROCESSAMENTO
 
     

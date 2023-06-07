@@ -16,23 +16,36 @@
     let mora = prompt(`Mora perto da vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
     let din = prompt(`Devia dinheiro para a vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
     let tra = prompt(`Já trabalhou com a vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
-    tel= 1
-    est = 1
-    mora = 1
-    din=1
-    tra=1
-    if (tel+est+mora+din+tra==5){
-        alert (`Assassino`)
+    
+    let resposta = 0 
+    if (perg1 == "s") {
+        resposta == resposta++
     }
-    else if (tel+est+mora+din+tra==4 || tel+est+mora+din+tra==3){
-        alert (`Cúmplice`)
+    if (perg2 == "s") {
+        resposta == resposta++;
     }
-    else if (tel+est+mora+din+tra==1 || tel+est+mora+din+tra==2){
-        alert (`Suspeito`)
+    if (perg3 == "s") {
+        resposta == resposta++;
     }
-    else if () {
-        alert (`Inocente`)
+    if (perg4 == "s") {
+        resposta == resposta++; 
     }
+    if (perg5 == "s") {
+        resposta == resposta++;
+    }
+    if (resposta == 2) {
+        alert(`Suspeito`);
+    }
+    else if (resposta == 3 || resposta == 4) {
+        alert(`Cúmplice`);
+    }
+    else if (resposta == 5) {
+        alert(`Assasino`);
+    }
+    else {
+        alert(`Inocente`);
+    }
+
     //PROCESSAMENTO
 
     //SAÍDA

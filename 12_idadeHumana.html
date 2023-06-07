@@ -7,6 +7,24 @@
     // - cães grandes: fator 7.
 
     // Entrada
+    const porte = prompt(`Qual o porte de seu cachorro? Responda com P para pequeno, M para médio e G para grande`).toLowerCase()
+    const idade = Number(prompt(`Informe quantos anos seu cachorro tem`))
+    mensagemfi= `Se comparado a idade humana, seu cachorro tem `
+    if (porte=="p") {
+        res = idade*5
+        alert(mensagemfi+res+ " anos");
+    }
+    else if (porte=="m") {
+        res = idade*6
+        alert(mensagemfi+res+ " anos")
+    }
+    else if (porte=="g") {
+        res = idade*7
+        alert(mensagemfi+res+ " anos")
+    }
+    else {
+        alert(`Inválido, tente novamente`)
+    }
 
     
     // Processamento
