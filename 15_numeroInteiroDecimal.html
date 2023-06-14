@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
-
+    const num = Number(prompt(`Informe um número`).replace(",", ".").toFixed(2).trim())
 
     //PROCESSAMENTO
-
-    
+    if (Number.isInteger(num)) {
+        alert(`O número ${num} é inteiro`)
+    }
+    else if (Number.isInteger(num)==false){
+        alert(`O número ${num} é decimal`)
+    }
+    else {
+        alert(`Inválido, tente novamente`)
+    }
     //SAÍDA
 
 

@@ -8,7 +8,47 @@
     */
 
     //ENTRADA
-
+    const num1= Number(prompt(`Informe um número`))
+    const num2= Number(prompt(`Informe outro número`))
+    const op= prompt(`Informe a operação que deseja realizar, use + para soma, - para subtração, / para divisão ou * para multiplicação`)
+    let resultado = 0;
+    if (op=="+"){
+        resultado =num1+num2;
+    }
+    else if (op=="-"){
+        resultado =num1-num2;
+    }
+    else if (op=="*"){
+        resultado =num1*num2;
+    }
+    else if (op=="/"){
+        resultado =num1/num2;
+    }
+    else {
+        alert(`Operação Inválida!`);
+    }
+    if (op == "+" || op == "-" || op == "*" || op == "/") {
+        let mensagemFi= `O resultado da operação é de ${resultado}, `
+        if (resultado%2 == 0) {
+            mensagemFi+= `sendo este número par, `
+        }
+        else {
+            mensagemFi+= `sendo este número ímpar, `
+        }
+            if (resultado>0) {
+            mensagemFi+= `positivo `
+            }
+            else {
+                mensagemFi+=`negativo `
+            }
+            if (Number.isInteger(resultado)) {
+                mensagemFi+= `e inteiro.`
+            }
+            else {
+                mensagemFi+= mensagemFi + `e decimal.`
+            }
+        }
+        alert(mensagemFi);
 
     //PROCESSAMENTO
 

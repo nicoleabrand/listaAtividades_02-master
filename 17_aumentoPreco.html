@@ -7,8 +7,26 @@
         //- acima de 1500: aumento de 5 %
     
     // Entrada
-
-    
+    const preco = Number(prompt(`Informe o valor atual do produto`))
+    if (preco<=280){
+        let aumento = (preco*0.2)+preco
+        alert(`O valor final do produto com aumento de 20% será de R$${aumento}`)
+    }
+    else if (preco>280 && preco<=700){
+        let aumento = (preco*0.15)+preco
+        alert(`O valor final do produto com aumento de 15% será de R$${aumento}`)
+    }
+    else if (preco>700 && preco<=1500){
+        let aumento = (preco*0.1)+preco
+        alert(`O valor final do produto com aumento de 10% será de R$${aumento}`)
+    }
+    else if (preco>1500){
+        let aumento = (preco*0.05)+preco
+        alert(`O valor final do produto com aumento de 5% será de R$${aumento}`)
+    }
+    else {
+        alert(`Inválido, tente novamente`)
+    }
     // Processamento
 
     
