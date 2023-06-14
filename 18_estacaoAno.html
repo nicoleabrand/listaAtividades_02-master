@@ -8,8 +8,33 @@
     //ENTRADA
     const hemis = prompt(`Em qual hemisfério você està? Responda com S(sul) e N(norte)`).toUpperCase()
     const mes = prompt(`Em qual mês você está? Responda em números, por exemplo: maio=5`)
-    if (hemis=S) {
-        if (mes==) {}
+    if (hemis="S") {
+        if (mes==3 || mes==03 || mes== 01 || mes==1 || mes==2 ||mes==02) {
+            alert(`A estação do ano atualmente é verão`)
+        }
+        else if (mes==4 || mes==04 || mes== 05 || mes==5 || mes==6 ||mes==06) {
+            alert(`A estação do ano atualmente é outono`)
+        }
+        else if (mes==7 || mes==07 || mes== 08 || mes==8 || mes==9 ||mes==09) {
+            alert(`A estação do ano atualmente é inverno`)
+        }
+        else if (mes==10 || mes==11 || mes== 12) {
+            alert(`A estação do ano atualmente é primavera`)
+        }
+    }
+    else if (hemis=="N") {
+        if (mes==3 || mes==03 || mes== 01 || mes==1 || mes==2 ||mes==02) {
+            alert(`A estação do ano atualmente é inverno`)
+        }
+        else if (mes==4 || mes==04 || mes== 05 || mes==5 || mes==6 ||mes==06) {
+            alert(`A estação do ano atualmente é primavera`)
+        }
+        else if (mes==7 || mes==07 || mes== 08 || mes==8 || mes==9 ||mes==09) {
+            alert(`A estação do ano atualmente é verão`)
+        }
+        else if (mes==10 || mes==11 || mes== 12) {
+            alert(`A estação do ano atualmente é outono`)
+        }
     }
 
     //PROCESSAMENTO
