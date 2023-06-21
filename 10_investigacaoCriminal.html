@@ -18,25 +18,25 @@
     let tra = prompt(`Já trabalhou com a vítima? Responda com S(sim) ou N(não)`).toUpperCase().trim()
     
     let resposta = 0 
-    if (perg1 == "s") {
-        resposta == resposta++
+    if (perg1 == "S") {
+        resposta == resposta+1
     }
-    if (perg2 == "s") {
-        resposta == resposta++;
+    if (perg2 == "S") {
+        resposta == resposta+1;
     }
-    if (perg3 == "s") {
-        resposta == resposta++;
+    if (perg3 == "S") {
+        resposta == resposta+1;
     }
-    if (perg4 == "s") {
-        resposta == resposta++; 
+    if (perg4 == "S") {
+        resposta == resposta+1; 
     }
-    if (perg5 == "s") {
-        resposta == resposta++;
+    if (perg5 == "S") {
+        resposta == resposta+1;
     }
     if (resposta == 2) {
         alert(`Suspeito`);
     }
-    else if (resposta == 3 || resposta == 4) {
+    if (resposta == 3 || resposta == 4) {
         alert(`Cúmplice`);
     }
     else if (resposta == 5) {
